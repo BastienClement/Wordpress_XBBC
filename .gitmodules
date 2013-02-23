@@ -1,0 +1,6 @@
+[submodule "xbbc"]
+	path = xbbc
+	url = git://github.com/galedric/xbbcode-parser.git
+[submodule "ucode"]
+	path = ucode
+	url = git://github.com/galedric/ucode-lib.git
