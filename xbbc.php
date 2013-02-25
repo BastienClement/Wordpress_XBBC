@@ -17,6 +17,21 @@ use UCode\Lib;
 $XBBC_PARSER = new Parser(SMILIES_OPTIMIZER);
 Lib::load($XBBC_PARSER);
 
+//
+// [html]
+//
+class HTMLTag extends \XBBC\TagDefinition {
+	protected $before, $after, $plaintext;
+	protected $strip_empty = true;
+
+	public function Bufferize($text) {
+		// Enjoy the escaping escape
+		return $this->Append($text);
+	}
+}
+
+$XBBC_PARSER->DefineTag('html', new HTMLTag());
+
 add_filter('the_content', function($content) {
 	global $XBBC_PARSER;
 	$content = preg_replace('%(<(?<tag>a|span).*?"more-[^"]+".*?>.*</\k<tag>>)%', '[html]$1[/html]', $content);
