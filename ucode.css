@@ -1,0 +1,304 @@
+.ucode .quote-author {
+	font-weight: bold;
+}
+
+.ucode blockquote {
+	border-left: 3px solid #222;
+	box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
+	padding: 10px;
+	background: rgba(0, 0, 0, 0.3);
+	margin: 10px 0;
+}
+
+.ucode .blizzquote {
+	color: #0091FF;
+}
+
+.ucode .mmoquote {
+	color: #90E055;
+}
+
+.ucode .blizzquote strong, .ucode .blizzquote em, .ucode .blizzquote a {
+	color: #bbb;
+}
+
+.ucode > blockquote > blockquote {
+	background: rgba(70, 70, 70, 0.1);
+}
+
+.ucode blockquote > :last-child {
+	margin-bottom: 0;
+}
+
+.ucode blockquote > :first-child {
+	margin-top: 0;
+}
+
+.ucode table {
+	box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
+	text-align: left;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.3);
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+.ucode td, .ucode th {
+	border: 0;
+}
+
+.ucode tr:nth-child(2n) {
+	background: rgba(70, 70, 70, 0.1);
+}
+
+.ucode th {
+	color: #C41F3B;
+}
+
+.ucode td, .ucode th {
+	background: url('line-hr.gif') repeat-x bottom;
+	padding: 10px 10px 12px 10px;
+}
+
+.ucode table.compact td, .ucode table.compact th {
+	padding-top: 5px;
+	padding-bottom: 7px;
+}
+
+.ucode tr:last-child td, .ucode tr:last-child th {
+	padding: 10px;
+	background: none;
+}
+
+.ucode table.compact tr:last-child td, .ucode table.compact tr:last-child th {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.ucode td > :first-child, .ucode th > :first-child {
+	margin-top: 0;
+}
+
+.ucode td > :last-child, .ucode th > :last-child {
+	margin-bottom: 0;
+}
+
+.ucode h3, .ucode h4, .ucode h5, .ucode h6 {
+	margin: 15px 0;
+	font-family: 'PT Sans Narrow', sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #C41F3B;
+}
+
+.ucode h3 {
+	font-size: 20px;
+}
+
+.ucode h4 {
+	font-size: 18px;
+}
+
+.ucode h5 {
+	font-size: 16px;
+}
+
+.ucode h6 {
+	font-size: 14px;
+}
+
+.ucode ul, .ucode ol {
+	margin: 0 0 0 20px;
+}
+
+.ucode > ul, .ucode > ol {
+	margin: 10px 0 10px 20px;
+}
+
+.ucode li:first-child {
+	margin-top: 0px;
+}
+
+.ucode img {
+	box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
+	max-width: 100%;
+}
+
+.ucode strong {
+	color: #ddd;
+}
+
+.ucode .socket {
+	display: inline-block;
+	height: 14px;
+	vertical-align: -2px;
+	padding: 0px !important;
+	width: 14px;
+}
+
+.ucode .icon-boss, .ucode .icon-quest {
+	box-shadow: none;
+	vertical-align: -3px;
+}
+
+.ucode .ej-icon {
+	box-shadow: none;
+	vertical-align: -3px;
+	width: 16px;
+	margin-left: 5px;
+}
+
+.ucode .ej-icon + .ej-icon {
+	margin-left: 0px;
+}
+
+.ucode .db-icon, .ucode .wow-class img, .ucode .wow-race img, .ucode .wow-icon, .ucode .tab img {
+	width: 15px;
+	height: 15px;
+	vertical-align: -4px;
+	border: 1px solid #333 !important;
+	color: #333 !important;
+	margin-right: 1px;
+}
+
+.ucode a > img {
+	color: #333 !important;
+}
+
+.ucode ins, .ucode .unnamed-green {
+	color: #C41F3B !important;
+}
+
+.ucode del {
+	opacity: 0.6;
+}
+
+.ucode .spoiler {
+	background: rgba(0, 0, 0, 0.3);
+	box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
+	overflow: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.ucode .spoiler-inner {
+	margin: 10px;
+	opacity: 0;
+}
+
+.ucode .spoiler:hover .spoiler-inner {
+	opacity: 1;
+}
+
+.ucode .toggler {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.ucode .toggler-link {
+	position: relative;
+	padding-left: 20px;
+}
+
+.ucode .toggler-link:before {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-image: url('glyphicons-halflings-white.png');
+	background-position: -456px -72px;
+	width: 12px;
+	height: 14px;
+	content: "";
+}
+
+.ucode .toggler.toggled > .toggler-link:before {
+	background-position: -313px -119px;
+}
+
+.ucode .toggler-inner {
+	display: none;
+	margin-left: 20px;
+}
+
+.ucode .toggler.toggled > .toggler-inner {
+	display: block;
+}
+
+.ucode .tabs-wrapper {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.ucode .tab {
+	display: inline-block;
+	padding: 10px;
+	color: #bbb;
+	margin-right: 5px;
+	background: rgba(0, 0, 0, 0.3);
+}
+
+.ucode .tab.active {
+	color: #C41F3B;
+}
+
+.ucode .tabs-contents {
+	background: rgba(0, 0, 0, 0.3);
+	box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
+	overflow: auto;
+	padding: 10px;
+}
+
+.ucode .tab-content {
+	display: none;
+}
+
+.ucode .tab-content.active {
+	display: block;
+}
+
+.ucode .tab-content > :first-child {
+	margin-top: 0;
+}
+
+.ucode .tab-content > :last-child {
+	margin-bottom: 0;
+}
+
+.ucode > :first-child {
+	margin-top: 0;
+}
+
+/*.ucode > :last-child {
+	margin-bottom: 0;
+}*/
+
+.ucode .latex {
+	box-shadow: none;
+}
+
+.ucode        { counter-reset: heading1; }
+.ucode h3.toc { counter-reset: heading2; }
+.ucode h4.toc { counter-reset: heading3; }
+.ucode h5.toc { counter-reset: heading4; }
+
+.ucode h3.toc::before {
+	counter-increment: heading1;
+	content: counter(heading1, upper-roman) " - ";
+}
+
+.ucode h4.toc::before {
+	counter-increment: heading2;
+	content: counter(heading1) "." counter(heading2) ". ";
+}
+
+.ucode h5.toc::before {
+	counter-increment: heading3;
+	content: counter(heading1) "." counter(heading2) "." counter(heading3) ". ";
+}
+
+.ucode h6.toc::before {
+	counter-increment: heading4;
+	content: counter(heading1) "." counter(heading2) "." counter(heading3) "." counter(heading4) ". ";
+}
